@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Password Generator</title>
+</head>
+<body>
+    <h1>Password Generator</h1>
+    <form method="post" action="/Home/GeneratePassword">
+        <label for="length">Password Length:</label>
+        <input type="number" id="length" name="length" value="8" min="8" max="32">
+        <br><br>
+        <label for="includeNumbers">Include Numbers:</label>
+        <input type="checkbox" id="includeNumbers" name="includeNumbers" checked>
+        <br><br>
+        <label for="includeSymbols">Include Symbols:</label>
+        <input type="checkbox" id="includeSymbols" name="includeSymbols">
+        <br><br>
+        <input type="submit" value="Generate Password">
+    </form>
+    
+    @if (ViewBag.Passwords != null && ViewBag.Passwords.Count > 0)
+    {
+        <h2>Generated Passwords:</h2>
+        <ul>
+            @foreach (var password in ViewBag.Passwords)
+            {
+                <li>@password</li>
+            }
+        </ul>
+        <form method="post" action="/Home/ClearPasswords">
+            <input type="submit" value="Clear Passwords">
+        </form>
+    }
+</body>
+</html>
+

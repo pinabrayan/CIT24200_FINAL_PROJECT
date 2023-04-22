@@ -2,7 +2,7 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-
+// BRAYAN PINA 
 namespace PasswordGenerator.Controllers
 {
     public class HomeController : Controller
@@ -91,5 +91,5 @@ namespace PasswordGenerator.Controllers
 
     }
 }
-
+// BRAYAN PINA
 

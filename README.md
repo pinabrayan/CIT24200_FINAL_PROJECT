@@ -1,1 +1,1 @@
-# CIT24200_FINAL_PROJECT
+For my final project, I made a random password generator. In this application, the user is presented with options that they want for the password. The user is able to choose how long they want the password to be, if they want numbers included, and symbols as well. The interface will display as many password variations as the user wants and the user will also be presented with a clear button if they want. The purpose of this application is to present the user with a strong password option in case they aren't able to think of one themselves.
